@@ -2,7 +2,7 @@ import requests
 
 POKEMON_NAME = 'articuno'
 
-def run():
+def task():
     pokemon_types = get_pokemon_types(POKEMON_NAME)
     pokemon_weaknesses = get_pokemon_weaknesses(pokemon_types)
     print(pokemon_weaknesses)
@@ -40,4 +40,4 @@ def get_pokemon_weaknesses(pokemon_types):
     return pokemon_weaknesses
 
 if __name__ == "__main__":
-    run()
+    task()
